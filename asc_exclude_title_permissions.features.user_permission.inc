@@ -9,15 +9,18 @@ function asc_exclude_title_permissions_user_default_permissions() {
   // Exported permission: administer exclude node title
   $permissions['administer exclude node title'] = array(
     'name' => 'administer exclude node title',
-    'roles' => array(),
+    'roles' => array(
+      '0' => 'Site Administrator',
+    ),
   );
 
   // Exported permission: exclude any node title
   $permissions['exclude any node title'] = array(
     'name' => 'exclude any node title',
     'roles' => array(
-      '0' => 'Administrator',
-      '1' => 'content manager',
+      '0' => 'Content Administrator',
+      '1' => 'Content Manager',
+      '2' => 'Site Administrator',
     ),
   );
 
@@ -25,8 +28,9 @@ function asc_exclude_title_permissions_user_default_permissions() {
   $permissions['exclude own node title'] = array(
     'name' => 'exclude own node title',
     'roles' => array(
-      '0' => 'Administrator',
-      '1' => 'content manager',
+      '0' => 'Content Administrator',
+      '1' => 'Content Manager',
+      '2' => 'Site Administrator',
     ),
   );
 
@@ -34,7 +38,8 @@ function asc_exclude_title_permissions_user_default_permissions() {
   $permissions['use exclude node title'] = array(
     'name' => 'use exclude node title',
     'roles' => array(
-      '0' => 'anonymous user',
+      '0' => 'Site Administrator',
+      '1' => 'anonymous user',
     ),
   );
 
