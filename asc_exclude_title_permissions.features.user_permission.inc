@@ -9,18 +9,16 @@ function asc_exclude_title_permissions_user_default_permissions() {
   // Exported permission: administer exclude node title
   $permissions['administer exclude node title'] = array(
     'name' => 'administer exclude node title',
-    'roles' => array(
-      '0' => 'Site Administrator',
-    ),
+    'roles' => array(),
   );
 
   // Exported permission: exclude any node title
   $permissions['exclude any node title'] = array(
     'name' => 'exclude any node title',
     'roles' => array(
-      '0' => 'Content Administrator',
-      '1' => 'Content Manager',
-      '2' => 'Site Administrator',
+      '0' => 'Administrator',
+      '1' => 'content editor',
+      '2' => 'content manager',
     ),
   );
 
@@ -28,9 +26,9 @@ function asc_exclude_title_permissions_user_default_permissions() {
   $permissions['exclude own node title'] = array(
     'name' => 'exclude own node title',
     'roles' => array(
-      '0' => 'Content Administrator',
-      '1' => 'Content Manager',
-      '2' => 'Site Administrator',
+      '0' => 'Administrator',
+      '1' => 'content editor',
+      '2' => 'content manager',
     ),
   );
 
@@ -38,8 +36,15 @@ function asc_exclude_title_permissions_user_default_permissions() {
   $permissions['use exclude node title'] = array(
     'name' => 'use exclude node title',
     'roles' => array(
-      '0' => 'Site Administrator',
-      '1' => 'anonymous user',
+      '0' => 'Administrator',
+      '1' => 'Form Viewer',
+      '2' => 'anonymous user',
+      '3' => 'ascent editor',
+      '4' => 'authenticated user',
+      '5' => 'content editor',
+      '6' => 'content manager',
+      '7' => 'drupaladmin',
+      '8' => 'webform manager',
     ),
   );
 
